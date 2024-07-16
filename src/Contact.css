@@ -6,7 +6,6 @@
   filter: drop-shadow(rgba(140, 140, 140, 0.444) 1rem 1rem 10px);
   display: grid;
   grid-template-columns: 20px 50px;
-  column-gap: 50px;
 }
 
 .Container {
