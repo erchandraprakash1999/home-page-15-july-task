@@ -9,6 +9,14 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaPhoneSquareAlt } from "react-icons/fa";
 
+
+const styles = {
+  button: {
+    backgroundColor: 'rgb(224, 26, 171)',
+    border: "none",
+  },
+};
+
 function Contact() {
   return (
     <>
@@ -16,38 +24,51 @@ function Contact() {
         <div className="card_container">
           <CardGroup className="cardGroup">
             <Card className="card1">
-              <div>
-                <FaLocationDot />
-              </div>
-              <div>
-                <Card.Body className="cardinfo">
-                  <Card.Title>Office Address</Card.Title>
-                  <Card.Text>
-                    Robert Robertson, 1234 NW Bobcat Lane, St. Robert, MO
-                    65584-5678.
-                  </Card.Text>
-                </Card.Body>
+              <div className="logoinfo">
+                <div className="logocontainer">
+                  <FaLocationDot className="logo" />
+                </div>
+                <div className="cardinfo">
+                  <Card.Body >
+                    <Card.Title>Office Address</Card.Title>
+                    <Card.Text>
+                      KEYES HIGH SCHOOL FOR GIRLS <br />
+                      St Johns Rd, Regimental Bazaar, <br />
+                      Shivaji Nagar, Secunderabad, <br />
+                      Telangana, 500003.
+                    </Card.Text>
+                  </Card.Body>
+                </div>
               </div>
             </Card>
             <Card className="card2">
-              <span>
-                <MdOutlineEmail />
-              </span>
-              <Card.Body>
-                <Card.Title>Email Address</Card.Title>
-                <Card.Text className="cardtext">abc123@gmail.com </Card.Text>
-              </Card.Body>
+              <div className="logoinfo">
+                <div className="logocontainer">
+                  <MdOutlineEmail className="logo" />
+                </div>
+                <div className="cardinfo">
+                  <Card.Body>
+                    <Card.Title>Email Address</Card.Title>
+                    <Card.Text className="cardtext">abc123@gmail.com </Card.Text>
+                  </Card.Body>
+                </div>
+              </div>
             </Card>
             <Card className="card3">
-              <span>
-                <FaPhoneSquareAlt />
-              </span>
-              <Card.Body>
-                <Card.Title>Contact number</Card.Title>
-                <Card.Text className="cardtext">+91-8976543218</Card.Text>
-              </Card.Body>
+              <div className="logoinfo">
+                <div className="logocontainer">
+                  <FaPhoneSquareAlt className="logo" />
+                </div>
+                <div className="cardinfo">
+                  <Card.Body>
+                    <Card.Title>Contact number</Card.Title>
+                    <Card.Text className="cardtext">+91-8976543218</Card.Text>
+                  </Card.Body>
+                </div>
+              </div>
             </Card>
           </CardGroup>
+
         </div>
         <div className="formimgContainer">
           <div className="contactMain">
@@ -71,7 +92,7 @@ function Contact() {
                   <Form.Control as="textarea" rows={3} />
                 </Form.Group>
                 <div className="d-grid gap-2">
-                  <Button variant="primary" size="lg">
+                  <Button variant="primary" size="lg" style={styles.button}>
                     Send Message
                   </Button>
                 </div>

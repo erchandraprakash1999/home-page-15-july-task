@@ -1,11 +1,11 @@
 .card1,
 .card2,
 .card3 {
-  margin: 2rem 3rem;
-  margin-bottom: 2rem;
+  margin: 1.3rem;
+  /* margin-bottom: 2rem; */
   filter: drop-shadow(rgba(140, 140, 140, 0.444) 1rem 1rem 10px);
-  display: grid;
-  grid-template-columns: 20px 50px;
+  display: flex;
+  gap: 2rem;
 }
 
 .Container {
@@ -14,14 +14,6 @@
   flex-direction: column;
   background-color: rgb(222, 222, 222);
   height: 100vh;
-
-  @media (min-width: 400px) {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-  }
 }
 .cardGroup {
   width: 75.6rem;
@@ -67,4 +59,28 @@
 }
 .cardtext {
   color: rgb(224, 26, 171);
+}
+.logo {
+  height: 4rem;
+  width: 4rem;
+  color: rgb(224, 26, 171);
+}
+.cardinfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logocontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: row; */
+  padding-left: 2rem;
+}
+.logoinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
 }
