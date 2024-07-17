@@ -1,3 +1,12 @@
+.container {
+  @media (max-width: 768px) {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+
 .AboutContainer {
   display: flex;
   flex-direction: row;
@@ -6,8 +15,15 @@
   height: 80vh;
   padding-left: 17.7rem;
 }
-.AboutImgContainer {
+.AboutImgContainer > img {
   width: 50vw;
+
+  @media (max-width: 700px) {
+    padding-top: 4rem;
+    z-index: 4;
+
+    position: relative !important;
+  }
 }
 .AboutInfo {
   width: 80vw;
@@ -32,6 +48,13 @@
   display: grid;
   grid-template-columns: repeat(2, 0.5fr);
   gap: 10px;
+
+  @media (max-width: 700px) {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
 }
 
 .box1,

@@ -68,7 +68,6 @@ function Contact() {
               </div>
             </Card>
           </CardGroup>
-
         </div>
         <div className="formimgContainer">
           <div className="contactMain">
