@@ -20,7 +20,7 @@ function About() {
     <div className="container">
       <div className="AboutContainer">
         <div className="AboutImgContainer">
-          <img src={Aboutimg} alt="about" className="img_fluid" />
+          <img src={Aboutimg} alt="about" className="AboutImg" />
         </div>
         <div className="AboutInfo">
           <Col md={6}>

@@ -11,6 +11,8 @@
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
   }
 }
 * {
@@ -36,7 +38,7 @@
 
   @media (max-width: 1400px) {
     width: 100vw;
-    margin-right: 0rem;
+    margin-right: -1rem;
   }
 }
 .AboutInfo {
@@ -55,11 +57,10 @@
   height: 35rem;
   scale: 0.75;
   border-radius: 10px;
-  @media (max-width: 1400px) {
+  /* @media (max-width: 1400px) {
     height: 35rem;
-    width: 100%;
-    /* width: 60rem; */
-  }
+  
+  } */
   /* clip-path: polygon(35% 14%, 100% 0, 97% 49%, 75% 95%, 15% 87%, 2% 50%); */
 }
 .AboutInfo > p {
