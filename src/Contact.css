@@ -13,19 +13,33 @@
     margin-left: -1rem;
     margin-right: -2rem;
     width: 30rem;
+    height: 30rem;
   }
 }
 
 .Container {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: column; */
   background-color: rgb(222, 222, 222);
-  height: 100%;
+  /* height: 100%;
+  width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
   width: 100%;
+  padding: 2rem;
 
   @media (max-width: 900px) {
     background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 .cardGroup {
@@ -60,6 +74,30 @@
   padding: 4rem;
   border: 1rem gray;
   border-radius: 10px;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; */
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.formimgContainer {
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: -1rem;
+    margin-right: -2rem;
+  }
 }
 .imgContainer > img {
   width: 31.8rem;

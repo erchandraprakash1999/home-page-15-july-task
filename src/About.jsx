@@ -20,17 +20,9 @@ function About() {
     <div className="container">
       <div className="AboutContainer">
         <div className="AboutImgContainer">
-          <img src={Aboutimg} alt="about" className="AboutImg" />
+          <img src={Aboutimg} alt="about" className="img_fluid" />
         </div>
         <div className="AboutInfo">
-          {/* <h1>About Us</h1> */}
-          {/* <p>
-          Maecenas nec odio et ante tincidunt tempus. Donec vitae apitlibero
-          venenatis faucibus. Nullam quis ante, posuere cubilia Curae In ac dui
-          quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu
-          tortor suscipit eget imperdiet nec imperdiet ialisn ipsum. Sed aliquam
-          ultrices mauris. Integer ante arcu consectetuer, vel
-        </p> */}
           <Col md={6}>
             <h2 id="about-us">About Us</h2>
             <p>
