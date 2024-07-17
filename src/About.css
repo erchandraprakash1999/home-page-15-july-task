@@ -4,29 +4,45 @@
     flex-direction: column !important;
     align-items: center !important;
     justify-content: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
-
+* {
+  /* overflow: hidden; */
+}
 .AboutContainer {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 80vh;
-  padding-left: 17.7rem;
+  /* padding-left: 17.7rem; */
+  @media (max-width: 1000px) {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
 }
-.AboutImgContainer > img {
-  width: 50vw;
+.AboutImgContainer {
+  width: 60vw;
 
-  @media (max-width: 700px) {
-    padding-top: 4rem;
-    z-index: 4;
-
-    position: relative !important;
+  @media (max-width: 1400px) {
+    width: 100vw;
+    margin-right: -1rem;
   }
 }
 .AboutInfo {
   width: 80vw;
+  @media (max-width: 900px) {
+    width: 90vw;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
 }
 
 .AboutImgContainer > img {
@@ -34,6 +50,10 @@
   height: 35rem;
   scale: 0.75;
   border-radius: 10px;
+  @media (max-width: 1400px) {
+    height: 35rem;
+    /* width: 60rem; */
+  }
   /* clip-path: polygon(35% 14%, 100% 0, 97% 49%, 75% 95%, 15% 87%, 2% 50%); */
 }
 .AboutInfo > p {
@@ -49,6 +69,9 @@
   grid-template-columns: repeat(2, 0.5fr);
   gap: 10px;
 
+  @media (max-width: 1400px) {
+    width: 60vw;
+  }
   @media (max-width: 700px) {
     display: flex !important;
     flex-direction: column !important;
@@ -62,7 +85,7 @@
 .box3,
 .box4 {
   /* background-color: blue; */
-  width: 50%;
+  width: 76%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -71,7 +94,7 @@
 .box2,
 .box4 {
   padding-top: 1rem;
-  margin-left: -8rem;
+  margin-left: -7rem;
 }
 .AboutBtn {
   margin-top: 2rem;

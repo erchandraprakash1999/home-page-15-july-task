@@ -19,7 +19,7 @@ const styles = {
 
 function Contact() {
   return (
-    <>
+    <div >
       <div className="Container">
         <div className="card_container">
           <CardGroup className="cardGroup">
@@ -33,7 +33,6 @@ function Contact() {
                     <Card.Title>Office Address</Card.Title>
                     <Card.Text>
                       KEYES HIGH SCHOOL FOR GIRLS <br />
-                      St Johns Rd, Regimental Bazaar, <br />
                       Shivaji Nagar, Secunderabad, <br />
                       Telangana, 500003.
                     </Card.Text>
@@ -103,7 +102,8 @@ function Contact() {
           </div>
         </div>
       </div>
-    </>
+    </div>
+
   );
 }
 
