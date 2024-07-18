@@ -16,3 +16,29 @@
   border: 1px solid #ddd;
   border-radius: 10px;
 }
+.logocontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-left: 2rem;
+}
+.logoinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+.logo {
+  height: 4rem;
+  width: 4rem;
+  color: rgb(224, 26, 171);
+}
+.img_container {
+  width: 31rem;
+}
+.heading {
+  align-items: center;
+  color: rgb(224, 26, 171);
+}

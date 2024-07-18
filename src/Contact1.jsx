@@ -21,7 +21,7 @@ function Contact1() {
   return (
     <div
       className="Container1"
-      style={{ backgroundColor: "  rgb(222, 222, 222)" }}
+      style={{ backgroundColor: "  rgb(222, 222, 222)", height: "auto" }}
     >
       <div className="card_container">
         <Card
@@ -49,7 +49,7 @@ function Contact1() {
             width: "20rem",
             marginRight: "2rem",
             marginTop: "2rem",
-            height: "10rem",
+            height: "11rem",
           }}
         >
           <div className="logoinfo">
@@ -58,7 +58,9 @@ function Contact1() {
             </div>
             <Card.Body>
               <Card.Title>Email Address</Card.Title>
-              <Card.Text>abcs123@gmail.com</Card.Text>
+              <Card.Text style={{ color: "rgb(224, 26, 171)" }}>
+                abcs123@gmail.com
+              </Card.Text>
             </Card.Body>
           </div>
         </Card>
@@ -67,7 +69,7 @@ function Contact1() {
             width: "20rem",
             marginRight: "2rem",
             marginTop: "2rem",
-            height: "10rem",
+            height: "11rem",
           }}
         >
           <div className="logoinfo">
@@ -76,7 +78,9 @@ function Contact1() {
             </div>
             <Card.Body>
               <Card.Title>Contact</Card.Title>
-              <Card.Text>+91-8976354282</Card.Text>
+              <Card.Text style={{ color: "rgb(224, 26, 171)" }}>
+                +91-8976354282
+              </Card.Text>
             </Card.Body>
           </div>
         </Card>
@@ -92,7 +96,7 @@ function Contact1() {
               xs={{ order: 2 }}
               md={{ size: 4, order: 1 }}
               tag="aside"
-              className="pb-5 mb-5 pb-md-0 
+              className="pb-3 mb-5 pb-md-0 
                             mb-md-0 mx-auto mx-md-0"
             >
               <div>
@@ -104,6 +108,7 @@ function Contact1() {
                     height: "50%",
                     padding: "3rem",
                     backgroundColor: "White",
+                    marginLeft: "2rem",
                   }}
                 >
                   <span className="heading">
@@ -114,17 +119,14 @@ function Contact1() {
                       className="mb-3"
                       controlId="exampleForm.ControlInput1"
                     >
-                      <Form.Label>Email address</Form.Label>
-                      <Form.Control
-                        type="email"
-                        placeholder="name@example.com"
-                      />
+                      <Form.Label>Subject</Form.Label>
+                      <Form.Control placeholder="subject" />
                     </Form.Group>
                     <Form.Group
                       className="mb-3"
                       controlId="exampleForm.ControlTextarea1"
                     >
-                      <Form.Label>Example textarea</Form.Label>
+                      <Form.Label>Message</Form.Label>
                       <Form.Control as="textarea" rows={3} />
                     </Form.Group>
                     <div className="d-grid gap-2">
@@ -150,6 +152,7 @@ function Contact1() {
                     height={300}
                     alt="171x180"
                     src={Peopleimg}
+                    style={{ width: "25rem", borderRadius: "10px" }}
                   />
                 </Figure>
               </div>

@@ -32,16 +32,15 @@ function About1() {
                             mb-md-0 mx-auto mx-md-0"
           >
             <div>
-              <div>
-                <Figure>
-                  <Figure.Image
-                    width={200}
-                    height={220}
-                    alt="200x220"
-                    src={Aboutimg}
-                  />
-                </Figure>
-              </div>
+              <Figure>
+                <Figure.Image
+                  width={200}
+                  height={220}
+                  alt="200x220"
+                  src={Aboutimg}
+                  style={{ width: "30rem" }}
+                />
+              </Figure>
             </div>
           </Col>
 
@@ -63,7 +62,14 @@ function About1() {
                   mauris. Integer ante arcu consectetuer, vel
                 </p>
               </Col>
-              <div className="gridItemContainer">
+              <div
+                className="gridItemContainer"
+                style={{
+                  display: "grid",
+                  gridTemplateColumns: "repeat(2,0.5fr)",
+                  gap: "10px",
+                }}
+              >
                 <div className="box1">
                   <div>
                     <MdPermContactCalendar className="logo" />
