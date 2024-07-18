@@ -38,7 +38,7 @@ function About1() {
                   height={220}
                   alt="200x220"
                   src={Aboutimg}
-                  style={{ width: "30rem" }}
+                  style={{ width: "auto" }}
                 />
               </Figure>
             </div>

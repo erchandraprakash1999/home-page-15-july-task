@@ -105,7 +105,7 @@ function Contact1() {
                   style={{
                     border: "1px solid grey",
                     borderRadius: "10px",
-                    height: "50%",
+                    height: "auto",
                     padding: "3rem",
                     backgroundColor: "White",
                     marginLeft: "2rem",
@@ -152,7 +152,7 @@ function Contact1() {
                     height={300}
                     alt="171x180"
                     src={Peopleimg}
-                    style={{ width: "25rem", borderRadius: "10px" }}
+                    style={{ width: "auto", borderRadius: "10px" }}
                   />
                 </Figure>
               </div>
